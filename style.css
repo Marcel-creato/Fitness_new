@@ -1,0 +1,11 @@
+body{
+   font-family: 'Montserrat', sans-serif; 
+   font-size: 18px;
+}
+.header{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-left:52px;
+    padding-right: 52px;
+}
+
