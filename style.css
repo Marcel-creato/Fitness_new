@@ -1,11 +1,154 @@
 body{
    font-family: 'Montserrat', sans-serif; 
    font-size: 18px;
+   color:rgba(24, 31, 39, 1);
+   
 }
-.header{
+header{
     max-width: 1920px;
     margin: 0 auto;
+    padding-top: 40px;
     padding-left:52px;
     padding-right: 52px;
+    /*padding-bottom: 255px;*/
 }
 
+.nav-menu{
+    width: 1140px;
+    display: flex;
+    justify-content: flex-start;
+    padding:0;
+    list-style-type: none;
+    color: #2B3541;
+    line-height: 150%;
+    margin:0;
+    background-color: greenyellow;
+}
+
+.nav-item{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.nav-item:first-child{
+    padding-left: 0;
+}
+.nav-logo{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.nav-link:hover{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2B3541;
+    cursor: pointer;
+}
+.nav-social{
+    padding-top: 17px;
+}
+.social{
+    transition: 1s ease;
+    padding-left: 30px;
+}
+
+.social:hover{
+    transform: scale(1.2);
+}
+main{
+    max-width: 1140px;
+    margin: 0 auto; 
+    display:flex;
+
+}
+
+.section-main{
+    display: inline-block;
+    max-width: 686px;
+}
+.title-3{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 125%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    max-width: 680px;
+    padding-bottom: 40px;
+    z-index:1;
+}
+.number{
+    font-size: 40px;
+    line-height: 125%;
+    color: #2B3541;
+    margin: 0;
+    padding-bottom: 20px;
+}
+.discription{
+    font-size: 18px;
+    line-height: 150%;
+    padding-left: 75px;
+    max-width: 300px;
+    margin-bottom: 40px;
+}
+.details{
+    width: 252px;
+    height: 64px;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color:#2B3541;
+    font-weight: 700;
+    border:none;
+    margin-left:75px;
+   
+}
+.details:hover{
+    width: 252px;
+    height: 64px;
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
+    color:#FBF138;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+/*
+.photo{
+    position: absolute;
+    z-index: 2;
+    padding-left:40px;
+}
+.background-1{
+    position:relative;
+    z-index: 1;
+    object-fit: cover;
+}
+.background-2{
+    position:relative;
+    z-index: 1;
+    object-fit: cover;
+}*/
+.section-photo{
+    /*transform: translate(338px, -742px);*/
+    position: relative;
+    left: 340px;
+}
+.section-main{
+    position: absolute;
+    top: 300px;
+    margin:0;
+}
+.arrow{
+
+}
