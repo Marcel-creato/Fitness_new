@@ -1,7 +1,7 @@
 body{
    font-family: 'Montserrat', sans-serif; 
    font-size: 18px;
-   color:rgba(24, 31, 39, 1);
+   color:#2B3541;
    
 }
 header{
@@ -38,7 +38,6 @@ a:link{
 .nav-logo{
     display: flex;
     justify-content: space-between;
-
 }
 
 .nav-link{
@@ -140,6 +139,7 @@ section{
 .arrow{
 transform: translate(64px,-58px);
 }
+
 .title-h3{
     font-weight: 700;
     font-size: 40px;
@@ -149,49 +149,232 @@ transform: translate(64px,-58px);
 .section-events{
     margin-top: 161px;
     padding-bottom: 40px;
+    margin-bottom: 160px;
 }
 
 .events{
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
-/*.card-1,
-.card-2,
-.card-3{
-   position: relative;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.8;
+.events-01,
+.events-02,
+.events-03{
+    flex: 0 0 calc(32% + 1px);
     height: 600px;
-}*/
-
-
+}
+.events-01{
+    background-image: url(/img/maraphon.png);
+    width: 100%;
+}
+.events-02{
+    background-image: url(/img/Vebinar\ 1.png);
+    width: 100%;
+}
+.events-03{
+    background-image: url(/img/Vebinar\ 2.png);
+    width: 100%;
+}
+.events-container{
+    width: 100%;
+    background: linear-gradient(180deg, rgba(251,241,56,0.3) 0%, rgba(253, 249, 182, 0) 100%);
+    height: 600px;
+}
 .date{
     font-weight: 700;
     font-size: 18px;
     line-height: 150%;
-    color: #2B3541;
     padding-top: 30px;
     padding-left: 30px;
+    opacity: 0.4;
     
 }
 .name{
-    font-weight: bold;
+    font-weight: 700;
     font-size: 28px;
     line-height: 125%;
-    color: #2B3541;
-    padding-top: 30px;
+    padding-top: 19px;
     padding-left: 30px;
+    opacity: none;
 }
 .events-container p{
     margin:0 auto;
+    
 }
-.events-container{
-    width: 100%;
-    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0) 100%);
-    opacity: 0.7;
-    height: 600px;
+.events-border{
+    background: rgba(251, 241, 56, 1);
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: #2B3541;
+    border: none;
+    z-index:1;
+    margin-top: 395px;
+    padding: 3px 10px;
+    margin-left: 226px;
+}
+.events-container:hover{
+    background-image: url(/img/gradient2.png);
+
+}
+.events-container:hover .events-border{
+    background: transparent;
+    color: transparent;
+}
+.participate{
+    background: transparent;
+    color: transparent;
+    border:none;
+
+}
+.events-container:hover .participate{
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FBF138;
+    width: 221px;
+    top:185px;
+    margin:0;
+    margin-top:40px;
+    margin-left: 30px;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+.section-training-title{
+    display: flex;
+    justify-content: space-between;
+}
+.training-date{
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+}
+.training-sport{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 122px);
+    grid-gap: 20px;
+    height: 100%;
+}
+.card-box{
+    padding: 20px 30px;
+}
+.card-box:hover{
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
 }
 
+.card-date{
+    color: rgba(1, 1, 1, 1);
+    font-size: 18px;
+    line-height: 150%;
+    color: #010101;
+    opacity: 0.7;
+    text-align: right;
+    margin: 0;
+}
+.card-title{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    color: #2B3541;
+    margin:0;
+}
+
+.card-1{
+    border: 1px solid rgba(43, 53, 65, 1);
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+.card-img-1{
+    padding-top:65px;
+    padding-bottom: 40px;
+
+}
+.card-2{
+    border: 1px solid rgba(43, 53, 65, 1);
+    grid-column: 2/3;
+    grid-row: 1/4;
+}
+.card-img-2{
+    padding-top:191px;
+    padding-bottom: 40px;
+}
+.card-3{
+    border: 1px solid rgba(43, 53, 65, 1);
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+.card-img-3{
+    padding-top:80px;
+    padding-bottom: 40px;
+}
+.card-4{
+    background: linear-gradient(180deg, #FBF138 0%, rgba(253, 249, 182, 0.45) 100%);
+    box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.2);
+    grid-column: 1/2;
+    grid-row: 3/6;
+}
+.card-img-4{
+    padding-top:73px;
+    padding-bottom: 40px;
+}
+.card-text-visible{
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    margin:0;
+    padding-top:20px;
+}
+.card-5{
+    border: 1px solid rgba(43, 53, 65, 1);
+    grid-column: 2/3;
+    grid-row: 4/6;
+}
+.card-img-5{
+    padding-top:70px;
+    padding-bottom: 40px;
+}
+.card-6{
+    border: 1px solid rgba(43, 53, 65, 1);
+    grid-column: 3/4;
+    grid-row: 3/6;
+}
+.card-img-6{
+    padding-top:200px;
+    padding-bottom: 40px;
+}
+.card-text-active{
+color:black;
+}
+.card-text-active:hover{
+    font-size: 18px;
+    line-height: 150%;
+    color: #2B3541;
+    margin:0;
+    padding-top:20px;
+}
+
+
+
+/*.events-01{
+    background-image: url(/img/maraphon.png);
+    width: 100%;
+    mask-repeat: no-repeat;
+}
+.events-02{
+    background-image: url(/img/Vebinar\ 1.png);
+    width: 100%;
+}
+.events-03{
+    background-image: url(/img/Vebinar\ 2.png);
+    width: 100%;}
 
 /*.border{
     position: absolute;
