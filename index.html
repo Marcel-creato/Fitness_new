@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <!--<link rel="stylesheet" href="css/jquery-ui.min.css">-->
     <link rel="stylesheet" href="normalize.css">
     <title>Fitness</title>
 </head>
@@ -48,7 +49,7 @@
                 <div class="events-container">
                     <p class="date">29.06 - 4.07</p>
                     <p class="name">Марафон<br>выносливости</p>
-                    <button class="participate">Участвовать</button>
+                    <a href="#form-participate"><button class="participate">Участвовать</button></a>
 
                     <div class="events-border">
                         <p class="events-border">марафон</p>
@@ -60,7 +61,7 @@
                     <p class="date">9.07</p>
                     <p class="name">Как стать<br>тренером?</p>
 
-                    <button class="participate">Участвовать</button>
+                    <a href="#form-participate"><button class="participate">Участвовать</button></a>
                     <div class="events-border">
                         <p class="events-border">вебинар</p>
                     </div>
@@ -70,14 +71,27 @@
                 <div class="events-container">
                     <p class="date">15.07</p>
                     <p class="name">Йога, как стиль<br>жизни</p>
-                    <button class="participate">Участвовать</button>
+                    <a href="#form-participate"><button class="participate">Участвовать</button></a>
 
                     <div class="events-border">
                         <p class="events-border">вебинар</p>
                     </div>
                 </div>
             </div>
+
         </div>
+        <form id="form-participate" class="form-participate">
+            <div class="form-participate-body">
+                <a href="" class="form-participate-body-close">Х</a>
+                <img class="form-participate-circle" src="icon/Pattern.svg" alt="круг">
+             
+                <p class="form-participate-title">Заявка на участие</br>«Марафон выносливости»</p>
+                <p class="form-participate-text">Заполните все поля, и мы пришлем информацию в ближайшее время</p>
+                <input type="text" placeholder="Ваш e-mail">
+                <input type="tel" placeholder="Ваш номер телефона">
+                <input type="submit" value="Отправить">
+            </div>
+        </form>
     </section>
     <section class="section-training">
         <div class="section-training-title">
@@ -174,7 +188,7 @@
     <section class="advantages">
             <div class="advantages-1">
                 <p class="advantages-title">Экономия времени</p>
-                <p class="advantages-text">Не нужно тратить&nbsp;время на дорогу</p>
+                <p class="advantages-text">Не нужно&nbsp;тратить время на дорогу</p>
             </div>
             <div class="advantages-2">
                 <p class="advantages-title">Индивидуальный подход</p>
@@ -222,49 +236,8 @@
 </footer>
 
 
-
-
-
-
-
-
-
-
-    <!--<section>
-        <div class="section-events">
-            <h3 class="title-h3">Ближайшие события</h3>
-            <div class="events-photo">
-                <div class="card-1">
-                    <div class="card-active">
-                        <p class="date">29.06 - 4.07</p>
-                        <p class="name">Марафон выносливости</p>
-                        <img class="card-1" src="img/maraphon.png" alt="Марафон">
-                        <p class="border">марафон</p>
-                        <p class="button-card">Участвовать</p>
-                    </div>
-                </div>
-                <div class="card-2">
-                    <div class="card-active">
-                        <p class="date">9.07</p>
-                        <p class="name">Как стать тренером?</p>
-                        <img class="card-2" src="img/Vebinar 1.png" alt="Вебинар">
-                        <p class="border">вебинар</p>
-                        <p class="button-card">Участвовать</p>
-                    </div>
-                </div>
-                <div class="card-3">
-                    <div class="card-active">
-                        <p class="date">15.07</p>
-                        <p class="name">Йога, как стиль жизни</p>
-                        <img class="card-3" src="img/Vebinar 2.png" alt="Вебинар">
-                        <p class="border">вебинар</p>
-                        <p class="button-card">Участвовать</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
--->
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="script/jquery-ui.min.js"></script>-->
 </body>
 
 </html>
