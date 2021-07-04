@@ -10,7 +10,7 @@ header{
     padding-top: 40px;
     padding-left:52px;
     padding-right: 52px;
-    /*padding-bottom: 255px;*/
+    margin-bottom: 20px;
 }
 
 .nav-menu{
@@ -22,7 +22,7 @@ header{
     color: #2B3541;
     line-height: 150%;
     margin:0;
-
+    padding-top: 10px;
 }
 a:link{
     color:rgba(24, 31, 39, 1);
@@ -32,9 +32,9 @@ a:link{
     padding-left: 20px;
     padding-right: 20px;
 }
-/*.nav-item:first-child{
+.nav-item:first-child{
     padding-left: 0;
-}*/
+}
 .nav-logo{
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ a:link{
     cursor: pointer;
 }
 .nav-social{
-    padding-top: 17px;
+    padding-top: 9px;
 }
 .social{
     transition: 1s ease;
@@ -64,7 +64,9 @@ main{
 }
 main,
 section,
-form{
+form,
+.footer-top,
+.footer-bottom{
     max-width: 1140px;
     margin: 0 auto; 
 }
@@ -72,6 +74,9 @@ form{
 .section-main{
     display: inline-block;
     max-width: 686px;
+    position:absolute;
+    top:321px;
+    margin: 0;
 }
 .title-h1{
     font-weight: 700;
@@ -88,17 +93,23 @@ form{
     line-height: 125%;
     color: #2B3541;
     margin: 0;
-    padding-bottom: 20px;
+    padding-bottom: 3px;
+    padding-top: 42px;
+    font-weight: normal;
+    text-transform: none;
 }
-.discription{
+.section-main-text {
     font-size: 18px;
     line-height: 150%;
     padding-left: 75px;
-    max-width: 300px;
-    margin-bottom: 40px;
+    max-width: 341px;
+    margin-bottom: 30px;
+    text-transform: none;
+    font-style: normal;
+    font-weight: normal;
 }
 .details{
-    width: 252px;
+    width: 268px;
     height: 64px;
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
@@ -114,7 +125,7 @@ form{
    
 }
 .details:hover{
-    width: 252px;
+    width: 268px;
     height: 64px;
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.2);
@@ -139,7 +150,7 @@ form{
     margin:0;
 }
 .arrow{
-transform: translate(64px,-58px);
+transform: translate(81px,-58px);
 }
 
 .title-h3{
@@ -147,13 +158,18 @@ transform: translate(64px,-58px);
     font-size: 40px;
     line-height: 125%;
     color: #2B3541;
+    margin:0;
+    padding-top:19px;
 }
 .section-events{
-    margin-top: 161px;
+    margin-top: 98px;
     padding-bottom: 40px;
-    margin-bottom: 160px;
+    margin-bottom: 89px;
 }
-
+.section-events .title-h3{
+    padding-top: 3px;
+    padding-bottom: 38px;
+}
 .events{
     display: flex;
     justify-content: space-between;
@@ -211,8 +227,8 @@ transform: translate(64px,-58px);
     color: #2B3541;
     border: none;
     z-index:1;
-    margin-top: 395px;
-    padding: 3px 10px;
+    margin-top: 381px;
+    padding: 6px 9px;
     margin-left: 226px;
 }
 .events-container:hover{
@@ -251,6 +267,11 @@ transform: translate(64px,-58px);
 .section-training-title{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 36px;
+}
+.section-training-title .title-h3{
+    padding-top: 29px;
+    margin:0;
 }
 .training-date{
     margin-top: 40px;
@@ -268,7 +289,7 @@ transform: translate(64px,-58px);
 .card-box{
     padding-left: 30px;
     padding-right: 30px;
-    padding-top:5px;
+    padding-top:21px;
 }
 .card-box-active{
     padding: 10px 30px;
@@ -387,13 +408,18 @@ transform: translate(64px,-58px);
    }
 .subscribe-title-h3{
 text-align: center;
-padding-top: 80px;
+padding-top: 0;
 margin:0;
 z-index:1;
 position: relative;
+margin-bottom: 41px;
+}
+.subscribe .title-h3{
+    padding-top: 13px;
+    margin-top: -23px;
 }
 .subscribe-circle{
-    bottom: -114px;
+    bottom: -55px;
     left: -307px;
     position: relative;
     z-index:-1;
@@ -446,7 +472,7 @@ form input[type=submit]:hover{
     font-size: 11px;
     line-height: 150%;
     align-items: center;
-    
+    padding-bottom:18px;
 }
 .checkbox-text p{
     margin-top: 0;
@@ -479,6 +505,11 @@ form input[type="text"]{
     padding-top:160px;
  justify-content: space-between;
 }
+.about-title .title-h3 {
+    margin: 0;
+    padding-top: 13px;
+}
+
 .title-text{
     font-size: 18px;
     line-height: 150%;  
@@ -538,12 +569,12 @@ form input[type="text"]{
 
 .advantages{
     display: flex;
-    justify-content: space-between;
-    padding-left:100px;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 120px;
+    margin-top: -20px;
 }
-.advantages-1{
-    padding-right:0;
-}
+
 .advantages-title{
     font-weight: 700;
     font-size: 18px;
@@ -555,4 +586,91 @@ form input[type="text"]{
     line-height: 150%;
     color: #2B3541;
     opacity: 0.6;
+}
+.advantages-2 .advantages-title,
+.advantages-2 .advantages-text,
+.advantages-3 .advantages-title,
+.advantages-3 .advantages-text,
+.advantages-4 .advantages-title,
+.advantages-4 .advantages-text{
+    margin-left: 77px;
+}
+footer{
+    background:#F3F3F3;
+    width: 100%;
+
+}
+.footer-top{
+    display:flex;
+    justify-content: space-between;
+    padding-top: 58px;
+}
+.footer-logo{
+    margin:0;
+}
+.footer-nav{
+    list-style-type: none;
+    display: flex;
+    margin:0;
+    font-size: 14px;
+    line-height: 150%;
+    color: #2B3541;
+    padding-top: 5px;
+}
+.footer-nav-item{
+    padding-right: 80px;
+}
+.footer-nav-link:hover{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #2B3541;
+    cursor: pointer;
+
+}
+.footer-nav-link{
+    text-decoration: none;
+}
+a:visited{
+    color:rgba(24, 31, 39, 1);
+}
+.footer-nav-link-mail{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2B3541;
+    text-decoration: none;
+    padding-top: 12px;
+}
+.footer-nav-info{
+    list-style-type: none;
+}
+li>.footer-nav-link-mail{
+    padding-top: 12px;
+}
+.footer-circle{
+    bottom: 16px;
+    left: 115px;
+    position: relative;
+    z-index:0;
+}
+.footer-nav-link-mail{
+    text-align: center;
+    margin:0;
+    z-index:1;
+    position: relative;
+    padding-top: 7px;
+    padding-left: 31px;
+}
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -36px;
+}
+.footer-bottom p{
+    font-size: 14px;
+line-height: 150%;
+color: #2B3541;
+opacity: 0.3;
+}
+.footer-top .nav-social{
+    padding-top: 2px;
 }
