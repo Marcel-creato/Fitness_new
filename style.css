@@ -763,6 +763,16 @@ transform: translate(0px, 0px);
     top:10px;
     position:absolute
 }
+.training-sport-mobile{
+    display: none;
+}
+.events-mobile{
+    display: none;
+}
+.events-03-mobile{
+    display: none;
+}
+
 @media(min-width: 901px){
 .header-mobile{
     display: none;
@@ -806,6 +816,7 @@ transform: translate(0px, 0px);
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 30px;
+    
 }
 
 .menu{
@@ -823,7 +834,7 @@ transform: translate(0px, 0px);
 }
 .section-main {
     position: absolute;
-    top: 60px;
+    top: 90px;
     margin: 10px;
 }
     .title-h1 {
@@ -837,7 +848,212 @@ transform: translate(0px, 0px);
         z-index: 1;
     }
     .logo{
-        width: 78px;
-        
+        width: 78px;  
     }
+    .section-photo {
+        position: relative;
+        left: 0px;
+        top: 386px;
+    }
+    .arrow {
+       display: none;
+    }
+    .number {
+        font-size: 26px;
+    }
+    .section-main-text {
+        font-size: 16px;
+        padding-left: 0px;
+    }
+    .details {
+        width: 340px;
+        height: 65px;
+        margin-left: 0px;
+    }
+    .details:hover {
+        width: 340px;
+        height: 65px;
+        margin-left: 0px;
+    }
+    .section-events {
+        margin-top: 508px;
+        padding-bottom: 40px;
+        margin-bottom: 89px;
+    }
+    .section-events {
+        margin-top: 470px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .title-h3 {
+        font-weight: 700;
+        font-size: 23px;
+    }
+    
+.nav-social:last-child{
+padding-right:0;
+}
+
+.social{
+    padding-right:25px;
+    padding-left:0;
+}
+
+.events{
+    display:none;
+}
+.events-mobile{
+    display:flex;
+    height: 310px;
+    justify-content: space-between;
+   
+}
+
+.events-container {
+    background: linear-gradient(180deg, rgba(251,241,56,0.3) 0%, rgba(253, 249, 182, 0) 100%);
+    height: 310px;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+.events-01 {
+    background-image: url(/img/maraphon.png);
+    width: 165px;
+    height: 100%;
+    background-size: cover;
+    
+}
+.events-02{
+    background-image: url(/img/Vebinar\ 1.png);
+    width: 165px;
+    height: 100%;
+    background-size: cover;
+}
+.events-03{
+    background-image: url(/img/Vebinar\ 2.png);
+  height: 310px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top:10px;
+}
+
+.events-01,
+.events-02,
+.events-03{
+    height: 310px;
+}
+
+
+.date{
+    font-size: 12px;
+    padding-right:20px;
+    padding-top:20px;
+    padding: 0 auto;
+    margin: 0 auto;
+}
+.name{
+    font-size: 16px;
+    padding-right:20px;
+    
+}
+.events-container:hover .participate{
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FBF138;
+    width: 30px;
+    height: 30px;
+    bottom:0;
+    margin:0;
+    margin-left: 30px;
+    padding-top:15px;
+    padding-bottom: 15px;
+    transition: 0.2ms ease;
+    right: 130px;
+}
+.events-border{
+    width: 87px;
+    font-size: 12px;
+    margin-top: 162px;
+    margin-left:0;
+    align-items: center;
+}
+.events-border p{
+    align-items: center;
+    padding:0;
+}
+.events-container p {
+    margin: 0 auto;
+    background: transparent;
+    align-items: center;
+}
+.events-container a{
+    z-index:1;
+    margin-top: 381px;
+    padding: 6px 9px;
+    margin-left: 226px;
+}
+
+.events-container:hover .events-border{
+    background: transparent;
+    color: transparent;
+}
+.participate{
+    background: transparent;
+    color: transparent;
+    border:none;
+
+}
+
+.training-sport{
+    display:none;
+}
+.training-sport-mobile{
+    display:flex;
+    flex-direction: column;
+}
+.section-training{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.training-date {
+    font-size: 16px;
+    color: #2B3541;
+    opacity: 0.7;
+}
+    .card-img-1 {
+        padding-top: 5px;
+        padding-bottom: 25px;
+        height: 39px;
+        width: 39px;
+        
+}
+
+    
+.card-title {
+    font-size: 14px;
+    float: right;
+    padding-top: 15px;
+    
+}
+
+
+.card-text-active:hover{
+    font-size: 12px;
+    line-height: 150%;
+    color: #2B3541;
+    margin:0;
+    padding-top: 8px;
+    position:absolute;
+} 
+
+.card-date {
+    font-size: 16px;
+}
+.card-box{
+position: relative;
+}
 }
