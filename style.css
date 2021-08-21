@@ -761,7 +761,7 @@ transform: translate(0px, 0px);
     text-decoration: none;
     right:10px;
     top:10px;
-    position:absolute
+    position:absolute;
 }
 .training-sport-mobile{
     display: none;
@@ -769,7 +769,7 @@ transform: translate(0px, 0px);
 .events-mobile{
     display: none;
 }
-.events-03-mobile{
+.events-03-mobile {
     display: none;
 }
 
@@ -778,6 +778,7 @@ transform: translate(0px, 0px);
     display: none;
 }
 }
+/*
 @media(max-width: 900px){
     header{
         display:none;
@@ -802,7 +803,7 @@ transform: translate(0px, 0px);
 .nav-social{
     padding-top:0;
 }
-}
+}*/
 @media(max-width: 360px){
     header{
         display:none;
@@ -878,7 +879,7 @@ transform: translate(0px, 0px);
     .section-events {
         margin-top: 508px;
         padding-bottom: 40px;
-        margin-bottom: 89px;
+        margin-bottom: 80px;
     }
     .section-events {
         margin-top: 470px;
@@ -928,17 +929,20 @@ padding-right:0;
     height: 100%;
     background-size: cover;
 }
-.events-03{
+.events-03-mobile{
     background-image: url(/img/Vebinar\ 2.png);
-  height: 310px;
+  height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     margin-top:10px;
 }
 
 .events-01,
-.events-02,
-.events-03{
+.events-02{
+    height: 310px;
+}
+
+.events-03-mobile{
     height: 310px;
 }
 
@@ -955,7 +959,7 @@ padding-right:0;
     padding-right:20px;
     
 }
-.events-container:hover .participate{
+/*.events-container:hover .participate{
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
     font-size: 24px;
@@ -967,17 +971,17 @@ padding-right:0;
     width: 30px;
     height: 30px;
     bottom:0;
-    margin:0;
-    margin-left: 30px;
+    /*margin:0;*/
+   /* margin-left: 30px;
     padding-top:15px;
     padding-bottom: 15px;
     transition: 0.2ms ease;
     right: 130px;
-}
+}*/
 .events-border{
     width: 87px;
     font-size: 12px;
-    margin-top: 162px;
+    margin-top: 152px;
     margin-left:0;
     align-items: center;
 }
@@ -992,21 +996,113 @@ padding-right:0;
 }
 .events-container a{
     z-index:1;
-    margin-top: 381px;
-    padding: 6px 9px;
-    margin-left: 226px;
+   /* margin-top: 381px;*/
+    /*padding: 6px 9px;*/
+    padding-bottom:50px;
+    margin-left: 104px;
 }
 
 .events-container:hover .events-border{
     background: transparent;
     color: transparent;
+    margin-bottom:0;
 }
-.participate{
+.events-container:hover .participate {
     background: transparent;
     color: transparent;
-    border:none;
-
+    margin-bottom:0;
+    box-shadow: none;
 }
+.participate{
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    font-size: 24px;
+    line-height: 150%;
+    color: #FBF138;
+    width: 30px;
+    height: 30px;
+    bottom:-183px;
+    margin:0;
+   margin-left: 30px;
+    padding-bottom: 15px;
+    transition: 0.2ms ease;
+    right: 0;
+position:relative;
+}
+.events-03-mobile .participate{
+    background: #2B3541;
+    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
+    font-size: 24px;
+    line-height: 150%;
+    color: #FBF138;
+    width: 30px;
+    height: 30px;
+    bottom:-183px;
+    margin:0;
+    margin-left: 206px;
+    padding-bottom: 15px;
+    transition: 0.2ms ease;
+    right: 0;
+    position:relative;
+}
+.form-participate {
+    /*position: fixed;*/
+    width: 100%;
+    height: 100%;
+    top: 64px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 360px;
+    height: 505px;
+    position: center;
+    background: #F3F3F3;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -100px);
+}
+.form-participate-circle {
+    position: absolute;
+    left: 78px;
+    top: 32px;
+    height: 41px;
+    width: 41px;
+}
+.form-participate-title {
+    font-size: 16px;
+}
+.form-participate-text {
+    width: 301px;
+    font-size: 16px;
+    text-align: center;
+    padding-left:15px;
+}
+.form-participate-body {
+    padding: 30px 8px 80px 8px;
+}  
+
+.form-participate input[type="text"] {
+    margin-bottom: 20px;
+    margin-top: 16px;
+    width: 340px;
+    height: 65px;
+    font-size: 16px;
+}
+.form-participate input[type="tel"] {
+    margin-top: -8px;
+    width: 340px;
+    color: #2B3541;
+    opacity: 0.5;
+    font-size: 16px;
+}
+.form-participate-body-close {
+    font-size: 22px;
+}
+
+
+
 
 .training-sport{
     display:none;
@@ -1014,6 +1110,17 @@ padding-right:0;
 .training-sport-mobile{
     display:flex;
     flex-direction: column;
+}
+.card-box:hover .card-text-active {
+    font-size: 12px;
+    transform: translateY(50px);
+    padding-left: 53px;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    padding-bottom: 16px;
+    margin-left: 0;
+    margin-top: -15px;
+    
 }
 .section-training{
     margin-left: 10px;
@@ -1024,23 +1131,30 @@ padding-right:0;
     color: #2B3541;
     opacity: 0.7;
 }
-    .card-img-1 {
-        padding-top: 5px;
-        padding-bottom: 25px;
-        height: 39px;
-        width: 39px;
-        
-}
+
 
     
-.card-title {
-    font-size: 14px;
-    float: right;
-    padding-top: 15px;
-    
+
+
+
+
+
+.card-date {
+    font-size: 16px;
 }
-
-
+.card-box{
+position: relative;
+}
+.card-1,
+.card-2,
+.card-3,
+.card-4,
+.card-5,
+.card-6{
+    width: 340px;
+    height: 114px;
+    margin-top:10px;
+}
 .card-text-active:hover{
     font-size: 12px;
     line-height: 150%;
@@ -1049,11 +1163,52 @@ padding-right:0;
     padding-top: 8px;
     position:absolute;
 } 
+    .card-img-1 {
+        padding-top: 0;
+        padding-bottom: 25px;
+        height: 39px;
+        width: 39px;  
+        float:left;   
+}
+.card-img-2 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 45px;
+    width: 23px;     
+}
+.card-img-3 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 25px;
+    width: 46px;     
+}
+.card-img-4 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 53px;
+    width: 34px;     
+}
+.card-img-5 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 40px;
+    width: 35px;     
+}
 
-.card-date {
-    font-size: 16px;
+.card-img-6 {
+    padding-top: 0;
+    padding-bottom: 25px;
+    height: 40px;
+    width: 35px;     
 }
-.card-box{
-position: relative;
+
+.card-box .card-title {
+    font-size: 14px;
+    padding-top: 15px;
+    padding-left: 53px;
+    float: right;
 }
+
+
+
 }
