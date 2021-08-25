@@ -8,21 +8,22 @@ header{
     max-width: 1920px;
     margin: 0 auto;
     padding-top: 40px;
-    padding-left:52px;
+    /*padding-left:52px;*/
     padding-right: 52px;
     margin-bottom: 20px;
+    margin-left: 186px;
 }
 
 .nav-menu{
     width: 1140px;
     display: flex;
     justify-content: flex-start;
-    padding:0;
     list-style-type: none;
     color: #2B3541;
     line-height: 150%;
     margin:0;
     padding-top: 10px;
+    padding-right: 153px;
 }
 a:link{
     color:rgba(24, 31, 39, 1);
@@ -345,7 +346,6 @@ transform: translate(81px,-58px);
 .card-img-1{
     padding-top:65px;
     padding-bottom: 40px;
-
 }
 .card-2{
     border: 1px solid rgba(43, 53, 65, 1);
@@ -773,7 +773,7 @@ transform: translate(0px, 0px);
     display: none;
 }
 
-@media(min-width: 901px){
+/*@media(min-width: 901px){
 .header-mobile{
     display: none;
 }
@@ -944,6 +944,7 @@ padding-right:0;
 
 .events-03-mobile{
     height: 310px;
+    display:block;
 }
 
 
@@ -1044,6 +1045,7 @@ position:relative;
     transition: 0.2ms ease;
     right: 0;
     position:relative;
+    
 }
 .form-participate {
     /*position: fixed;*/
@@ -1111,6 +1113,7 @@ position:relative;
     display:flex;
     flex-direction: column;
 }
+/*
 .card-box:hover .card-text-active {
     font-size: 12px;
     transform: translateY(50px);
@@ -1119,9 +1122,9 @@ position:relative;
     padding-top: 0px;
     padding-bottom: 16px;
     margin-left: 0;
-    margin-top: -15px;
-    
+    margin-top: -32px;
 }
+*/
 .section-training{
     margin-left: 10px;
     margin-right: 10px;
@@ -1144,7 +1147,11 @@ position:relative;
 }
 .card-box{
 position: relative;
+padding-left: 20px;
+padding-right: 20px;
+padding-top: 20px;
 }
+
 .card-1,
 .card-2,
 .card-3,
@@ -1155,6 +1162,16 @@ position: relative;
     height: 114px;
     margin-top:10px;
 }
+.card-1:hover,
+.card-2:hover,
+.card-3:hover,
+.card-4:hover,
+.card-5:hover,
+.card-6:hover {
+    width: 340px;
+    height: 150px;
+    margin-top: 10px;
+}
 .card-text-active:hover{
     font-size: 12px;
     line-height: 150%;
@@ -1164,51 +1181,244 @@ position: relative;
     position:absolute;
 } 
     .card-img-1 {
-        padding-top: 0;
-        padding-bottom: 25px;
-        height: 39px;
-        width: 39px;  
-        float:left;   
+        padding-top: 9px;
+        padding-bottom:0;
+        padding-right:5px;
+        height: 33px;
+        width: 35px;
+        
+         
 }
 .card-img-2 {
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     height: 45px;
     width: 23px;     
 }
 .card-img-3 {
     padding-top: 0;
-    padding-bottom: 25px;
-    height: 25px;
+    padding-bottom: 0px;
+    height: 45px;
     width: 46px;     
 }
 .card-img-4 {
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     height: 53px;
     width: 34px;     
 }
+.card-4{
+    background: none;
+    box-shadow: none;
+    border: 1px solid rgba(43, 53, 65, 1);
+}
 .card-img-5 {
     padding-top: 0;
-    padding-bottom: 25px;
-    height: 40px;
+    padding-bottom: 0px;
+    height: 55px;
     width: 35px;     
 }
 
 .card-img-6 {
     padding-top: 0;
-    padding-bottom: 25px;
+    padding-bottom: 0px;
     height: 40px;
     width: 35px;     
 }
 
-.card-box .card-title {
-    font-size: 14px;
-    padding-top: 15px;
-    padding-left: 53px;
-    float: right;
+.subscribe{
+    margin-top: 80px;
+    padding-bottom: 40px;
+}
+.subscribe-circle {
+    bottom: -55px;
+    left: -91px;
+    position: relative;
+    z-index: -1;
 }
 
+/*.card-box .card-title {
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 0;
+    float: right;
+    padding-right: 24px;
 
+}
+/*
+.card-1:hover .card-title,
+.card-2:hover .card-title,
+.card-3:hover .card-title,
+.card-4:hover .card-title,
+.card-5:hover .card-title,
+.card-6:hover .card-title{
+  .card-box-text
+    padding-top: 13px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    float: right;
+    padding-right: 24px;
+}*/
 
+.card-box-text{
+    width: 240px;
+    padding: 0;
+    float: right;  
+}
+
+.card-box-text .card-title{
+    padding-top: 13px;
+    padding-left: 0;
+    padding-bottom: 5px;
+    padding-right: 0px;
+    font-size: 16px;
+    text-align: left;
+}
+.card-box:hover .card-text-active{
+    font-size: 12px;
+    transform: translateY(10px);
+    padding-bottom: -5px;
+    padding-top: 0px;
+    margin: 0px auto;
+    margin-right: 6px;
+    width: 234px;
+}
+
+/*.card-1:hover .card-text-active {
+    font-size: 12px;
+    transform: translateY(18px);
+    padding-bottom: -5px;
+    padding-top: 25px;
+    margin: 0px auto;
+    margin-right: -10px;
+    width: 234px;
+}
+.card-2:hover .card-text-active {
+    font-size: 12px;
+    transform: translateY(-40px);
+    padding-bottom: -5px;
+    padding-top: 25px;
+    margin: 0px auto;
+    margin-right: -10px;
+    width: 234px;
+}
+
+.card-2:hover .card-title{
+    font-size: 14px;
+    padding-top: 7px;
+    padding-left: 0;
+    float: right;
+    padding-right: 132px;
+}*/
+.subscribe .title-h3 {
+    padding-top: 69px;
+    margin-top: -63px;
+}
+.subscribe-circle {
+    bottom: -47px;
+    height: 50px;
+    width: 50px;
+}
+form-mobile input[type="text"] {
+    width: 326px;
+    height: 65px;
+    margin-right: 10px;
+    margin-left: 10px;
+    border: none;
+    padding-left: 15px;
+}
+[type="checkbox"], [type="radio"] {
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 14px;
+    height: 14px;
+    float:left;
+}
+.checkbox-text-mobile{
+    font-size: 11px;
+    padding-top: 1px;
+}
+form{
+    display:none;
+}
+.checkbox-text{
+    display:none;
+}
+form-mobile{
+    padding-right:15px;
+}
+form-mobile input[type=submit]{
+    width: 338px;
+    height: 65px;
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
+    color:rgba(43, 53, 65, 1);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    border:none;
+    margin-left:10px;
+}
+.about{
+    display:none;
+}
+
+.about-mobile{
+    margin-top: 80px; 
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.about-mobile .title-h3{
+    font-size:26px;
+    font-weight: 700;
+}
+.about-mobile .title-text{
+    font-size:16px;
+}
+.advantages{
+    display: none;
+}
+.advantages-mobile{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.advantages-2 .advantages-title, 
+.advantages-2 .advantages-text, 
+.advantages-3 .advantages-title, 
+.advantages-3 .advantages-text, 
+.advantages-4 .advantages-title, 
+.advantages-4 .advantages-text {
+    margin-left: 0;
+    margin-right: 0;
+}
+.advantages-title{
+    font-size: 16px;
+}
+.advantages-text{
+    font-size: 16px;
+}
+.registration{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 338px;
+    height: 65px;
+}
+.about-img{
+    background-size: contain;
+    width: 360px;
+    height: 207px;
+}
+.about-gradient{
+    background-size: contain;
+    width: 360px;
+    height: 207px;
+}
 }
