@@ -419,8 +419,8 @@ margin-bottom: 41px;
     margin-top: -23px;
 }
 .subscribe-circle{
-    bottom: -55px;
-    left: -307px;
+    bottom: -60px;
+    left: -157px;
     position: relative;
     z-index:-1;
 }
@@ -763,47 +763,35 @@ transform: translate(0px, 0px);
     top:10px;
     position:absolute;
 }
-.training-sport-mobile{
-    display: none;
-}
-.events-mobile{
-    display: none;
-}
-.events-03-mobile {
-    display: none;
-}
 
-/*@media(min-width: 901px){
-.header-mobile{
-    display: none;
-}
-}
+.training-sport-mobile,
+.events-mobile,
+.events-03-mobile,
 /*
-@media(max-width: 900px){
-    header{
-        display:none;
-    }
-    .header-mobile{
-        display: flex;
-        justify-content: space-between;
-    }
+.advantages-mobile,
+.registration-mobile,
+.about-img-mobile,
+.about-gradient-mobile,
 
+*/
+.footer-top-mobile,
+.footer-bottom-mobile,
+.about-mobile,
+.subscribe-mobile,
+.registration-mobile,
+.advantages-mobile,
+.training-sport-mobile,
+.nav-logo-mobile,
 .header-mobile{
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 30px;
+    display: none;
+
 }
 
-.menu{
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    align-items: center;
-}
-.nav-social{
-    padding-top:0;
-}
-}*/
+
+
+
+
+
 @media(max-width: 360px){
     header{
         display:none;
@@ -812,12 +800,13 @@ transform: translate(0px, 0px);
         display: flex;
         justify-content: space-between;
     }
-
+    .nav-logo-mobile{
+        padding-left: 15px;
+    }
 .header-mobile{
     margin-right: 10px;
     margin-left: 10px;
     margin-top: 30px;
-    
 }
 
 .menu{
@@ -826,6 +815,7 @@ transform: translate(0px, 0px);
     cursor: pointer;
     align-items: center;
     width: 40px;
+    padding-left:130px;
 }
 .nav-social{
     padding-top:0;
@@ -1226,16 +1216,8 @@ padding-top: 20px;
     width: 35px;     
 }
 
-.subscribe{
-    margin-top: 80px;
-    padding-bottom: 40px;
-}
-.subscribe-circle {
-    bottom: -55px;
-    left: -91px;
-    position: relative;
-    z-index: -1;
-}
+
+
 
 /*.card-box .card-title {
     font-size: 14px;
@@ -1284,41 +1266,31 @@ padding-top: 20px;
     width: 234px;
 }
 
-/*.card-1:hover .card-text-active {
-    font-size: 12px;
-    transform: translateY(18px);
-    padding-bottom: -5px;
-    padding-top: 25px;
-    margin: 0px auto;
-    margin-right: -10px;
-    width: 234px;
-}
-.card-2:hover .card-text-active {
-    font-size: 12px;
-    transform: translateY(-40px);
-    padding-bottom: -5px;
-    padding-top: 25px;
-    margin: 0px auto;
-    margin-right: -10px;
-    width: 234px;
+.subscribe{
+    display:none;
 }
 
-.card-2:hover .card-title{
-    font-size: 14px;
-    padding-top: 7px;
-    padding-left: 0;
-    float: right;
-    padding-right: 132px;
-}*/
-.subscribe .title-h3 {
+.subscribe-mobile .title-h3 {
     padding-top: 69px;
     margin-top: -63px;
+}
+.subscribe-mobile{
+    margin-top: 80px;
+    padding-bottom: 51px;
+    background:#F3F3F3;
+    width: 100%;
 }
 .subscribe-circle {
     bottom: -47px;
     height: 50px;
     width: 50px;
+    left: -89px;
 }
+.subscribe-title-h3 {
+    padding-bottom:51px;
+    margin-bottom:0;
+}
+
 form-mobile input[type="text"] {
     width: 326px;
     height: 65px;
@@ -1345,7 +1317,14 @@ form{
 .checkbox-text{
     display:none;
 }
-form-mobile{
+.about{
+    display:none;
+}
+.advantages{
+    display: none;
+}
+
+.form-mobile{
     padding-right:15px;
 }
 form-mobile input[type=submit]{
@@ -1362,10 +1341,9 @@ form-mobile input[type=submit]{
     text-transform: uppercase;
     border:none;
     margin-left:10px;
+    margin-top:40px;
 }
-.about{
-    display:none;
-}
+
 
 .about-mobile{
     margin-top: 80px; 
@@ -1379,9 +1357,7 @@ form-mobile input[type=submit]{
 .about-mobile .title-text{
     font-size:16px;
 }
-.advantages{
-    display: none;
-}
+
 .advantages-mobile{
     display: flex;
     flex-direction: column;
@@ -1403,7 +1379,10 @@ form-mobile input[type=submit]{
 .advantages-text{
     font-size: 16px;
 }
-.registration{
+.registration-mobile{
+    background: #FBF138;
+    box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
+    border:none;
     margin-top: 40px;
     margin-bottom: 40px;
     margin-right: 10px;
@@ -1411,14 +1390,67 @@ form-mobile input[type=submit]{
     width: 338px;
     height: 65px;
 }
-.about-img{
+.about-img-mobile{
+    background-image: url(/img/trainer.png);
+    background-repeat: no-repeat;
     background-size: contain;
     width: 360px;
     height: 207px;
 }
-.about-gradient{
+.about-gradient-mobile{
     background-size: contain;
+    background: linear-gradient(180deg, rgba(251,241,56,0.3) 0%, rgba(253, 249, 182, 0) 100%);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
     width: 360px;
     height: 207px;
 }
+.footer-top{
+    display:none;
+}
+.footer-bottom{
+    display: none;
+}
+.footer-logo{
+    margin-top: 38px;
+    margin-left: 70px;
+    margin-right: 70px;
+    margin-bottom: 40px;
+}
+footer{
+    background: none;
+}
+.footer-top-mobile{
+    width: 360px;
+}
+.footer-nav{
+    font-size: 12px;
+}
+.footer-nav-item {
+    padding-right: 36px;
+}
+ul.footer-nav{
+    padding-left:10px;
+}
+.footer-nav-link-mail-social{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom:40px;
+}
+.footer-circle {
+    bottom: -63px;
+    left: -7px;
+}
+.footer-nav-link-mail{
+    font-size: 12px;
+    padding-top: 10px;
+    }
+.footer-bottom-mobile{
+    font-size: 10px;
+    text-align: center;
+color: #2B3541;
+opacity: 0.3;
+}
+
 }
