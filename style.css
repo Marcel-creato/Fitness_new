@@ -144,6 +144,7 @@ form,
 .section-photo{
     position: relative;
     left: 340px;
+
 }
 .section-main{
     position: absolute;
@@ -169,7 +170,7 @@ transform: translate(81px,-58px);
 }
 .section-events .title-h3{
     padding-top: 3px;
-    padding-bottom: 38px;
+    padding-bottom: 20px;
 }
 .events{
     display: flex;
@@ -268,7 +269,7 @@ transform: translate(81px,-58px);
 .section-training-title{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 36px;
+    margin-bottom: 10px;
 }
 .section-training-title .title-h3{
     padding-top: 29px;
@@ -802,6 +803,9 @@ transform: translate(0px, 0px);
     }
     .nav-logo-mobile{
         padding-left: 15px;
+        display: block;
+        margin-left: -12px;
+        margin-right: -15px;
     }
 .header-mobile{
     margin-right: 10px;
@@ -815,10 +819,13 @@ transform: translate(0px, 0px);
     cursor: pointer;
     align-items: center;
     width: 40px;
-    padding-left:130px;
+    padding-left:9px;
+    margin-left: -63px;
 }
 .nav-social{
     padding-top:0;
+    margin-right: 4px;
+    margin-left: -98px;
 }
 .photo{
     max-width: 100%;
@@ -830,31 +837,36 @@ transform: translate(0px, 0px);
 }
     .title-h1 {
         font-weight: 700;
-        font-size: 20px;
         line-height: 125%;
-        letter-spacing: 0.03em;
+        letter-spacing: 0.02em;
         text-transform: uppercase;
-        max-width: 300px;
+        max-width: 340px;
         padding-bottom: 40px;
         z-index: 1;
+        font-size: 26px;
     }
     .logo{
         width: 78px;  
+        
     }
     .section-photo {
         position: relative;
-        left: 0px;
-        top: 386px;
+        left: -4px;
+        top: 415px;
     }
     .arrow {
        display: none;
     }
     .number {
         font-size: 26px;
+        padding-top: 47px;
+        padding-bottom: 0;
     }
     .section-main-text {
         font-size: 16px;
         padding-left: 0px;
+        padding-bottom: 6px;
+        line-height: 150%;
     }
     .details {
         width: 340px;
@@ -867,29 +879,33 @@ transform: translate(0px, 0px);
         margin-left: 0px;
     }
     .section-events {
-        margin-top: 508px;
         padding-bottom: 40px;
-        margin-bottom: 80px;
-    }
-    .section-events {
-        margin-top: 470px;
+        margin-bottom: 11px;
+        margin-top: 488px;
         margin-right: 10px;
         margin-left: 10px;
     }
     .title-h3 {
         font-weight: 700;
-        font-size: 23px;
+        font-size: 26px;
     }
     
 .nav-social:last-child{
 padding-right:0;
+padding-left: 18px;
+margin-right: 25px;
+}
+.social:last-child {
+    padding-right: 0px;
+    padding-left: 15px;
 }
 
 .social{
-    padding-right:25px;
-    padding-left:0;
+    padding-right:24px;
+    padding-left: 42px;
+    width: 26px;
+    height: 26px;
 }
-
 .events{
     display:none;
 }
@@ -920,7 +936,7 @@ padding-right:0;
     background-size: cover;
 }
 .events-03-mobile{
-    background-image: url(/img/Vebinar\ 2.png);
+    background-image: url(/img/Vebinar\ 2!.png);
   height: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -933,46 +949,39 @@ padding-right:0;
 }
 
 .events-03-mobile{
-    height: 310px;
+    height: 336px;
     display:block;
 }
 
-
+.events-03-mobile .events-border{
+    margin-top: 185px;
+    height: 20px;
+    width: 68px;
+    font-size: 12px;
+    margin-left: 0;
+    align-items: center;
+}
+.events-03-mobile .events-container p{
+margin-top:0;
+}
 .date{
     font-size: 12px;
-    padding-right:20px;
-    padding-top:20px;
+    padding-top:16px;
     padding: 0 auto;
     margin: 0 auto;
+    padding-left: 19px;
 }
 .name{
     font-size: 16px;
-    padding-right:20px;
+    padding-left:20px;
+    padding-top: 15px;
     
 }
-/*.events-container:hover .participate{
-    background: #2B3541;
-    box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
-    font-size: 24px;
-    line-height: 150%;
-    text-align: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FBF138;
-    width: 30px;
-    height: 30px;
-    bottom:0;
-    /*margin:0;*/
-   /* margin-left: 30px;
-    padding-top:15px;
-    padding-bottom: 15px;
-    transition: 0.2ms ease;
-    right: 130px;
-}*/
+
 .events-border{
-    width: 87px;
+    width: 68px;
     font-size: 12px;
-    margin-top: 152px;
+    margin-top: 160px;
     margin-left:0;
     align-items: center;
 }
@@ -1007,12 +1016,11 @@ padding-right:0;
 .participate{
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
-    font-size: 24px;
-    line-height: 150%;
+    font-size: 29px;
     color: #FBF138;
     width: 30px;
     height: 30px;
-    bottom:-183px;
+    bottom:-191px;
     margin:0;
    margin-left: 30px;
     padding-bottom: 15px;
@@ -1023,12 +1031,11 @@ position:relative;
 .events-03-mobile .participate{
     background: #2B3541;
     box-shadow: 0px 13px 24px rgba(70, 86, 106, 0.28);
-    font-size: 24px;
-    line-height: 150%;
+    font-size: 29px;
     color: #FBF138;
     width: 30px;
     height: 30px;
-    bottom:-183px;
+    bottom: -217px;
     margin:0;
     margin-left: 206px;
     padding-bottom: 15px;
@@ -1148,8 +1155,8 @@ padding-top: 20px;
 .card-4,
 .card-5,
 .card-6{
-    width: 340px;
-    height: 114px;
+    width: 338px;
+    height: 111px;
     margin-top:10px;
 }
 .card-1:hover,
@@ -1216,32 +1223,6 @@ padding-top: 20px;
     width: 35px;     
 }
 
-
-
-
-/*.card-box .card-title {
-    font-size: 14px;
-    padding-top: 7px;
-    padding-left: 0;
-    float: right;
-    padding-right: 24px;
-
-}
-/*
-.card-1:hover .card-title,
-.card-2:hover .card-title,
-.card-3:hover .card-title,
-.card-4:hover .card-title,
-.card-5:hover .card-title,
-.card-6:hover .card-title{
-  .card-box-text
-    padding-top: 13px;
-    padding-left: 0;
-    padding-bottom: 5px;
-    float: right;
-    padding-right: 24px;
-}*/
-
 .card-box-text{
     width: 240px;
     padding: 0;
@@ -1275,16 +1256,17 @@ padding-top: 20px;
     margin-top: -63px;
 }
 .subscribe-mobile{
-    margin-top: 80px;
+    margin-top: 77px;
     padding-bottom: 51px;
     background:#F3F3F3;
     width: 100%;
+    display:block;
 }
 .subscribe-circle {
     bottom: -47px;
     height: 50px;
     width: 50px;
-    left: -89px;
+    left: -96px;
 }
 .subscribe-title-h3 {
     padding-bottom:51px;
@@ -1297,7 +1279,7 @@ form-mobile input[type="text"] {
     margin-right: 10px;
     margin-left: 10px;
     border: none;
-    padding-left: 15px;
+    padding-left: 21px;
 }
 [type="checkbox"], [type="radio"] {
     box-sizing: border-box;
@@ -1309,7 +1291,8 @@ form-mobile input[type="text"] {
 }
 .checkbox-text-mobile{
     font-size: 11px;
-    padding-top: 1px;
+    padding-top: 3px;
+    padding-left: 3px;
 }
 form{
     display:none;
@@ -1329,7 +1312,7 @@ form{
 }
 form-mobile input[type=submit]{
     width: 338px;
-    height: 65px;
+    height: 61px;
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.2);
     color:rgba(43, 53, 65, 1);
@@ -1349,6 +1332,7 @@ form-mobile input[type=submit]{
     margin-top: 80px; 
     margin-right: 10px;
     margin-left: 10px;
+    display:block;
 }
 .about-mobile .title-h3{
     font-size:26px;
@@ -1375,20 +1359,27 @@ form-mobile input[type=submit]{
 }
 .advantages-title{
     font-size: 16px;
+    margin-top:0;
+    
 }
 .advantages-text{
     font-size: 16px;
+    margin-bottom: 38px;
 }
 .registration-mobile{
     background: #FBF138;
     box-shadow: 0px 13px 24px rgba(251, 241, 56, 0.3);
     border:none;
-    margin-top: 40px;
+    margin-top: 0;
     margin-bottom: 40px;
-    margin-right: 10px;
-    margin-left: 10px;
-    width: 338px;
+    margin-right: 0px;
+    margin-left: 0px;
+    width: 355px;
     height: 65px;
+    display:block;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 .about-img-mobile{
     background-image: url(/img/trainer.png);
@@ -1413,16 +1404,17 @@ form-mobile input[type=submit]{
     display: none;
 }
 .footer-logo{
-    margin-top: 38px;
-    margin-left: 70px;
+    margin-top: 40px;
+    margin-left: 65px;
     margin-right: 70px;
-    margin-bottom: 40px;
+    margin-bottom: 14px;
 }
 footer{
     background: none;
 }
 .footer-top-mobile{
     width: 360px;
+    display:block;
 }
 .footer-nav{
     font-size: 12px;
@@ -1437,10 +1429,13 @@ ul.footer-nav{
     display: flex;
     justify-content: space-between;
     margin-bottom:40px;
+    margin-top: -61px;
+    margin-left: -22px;
+    margin-right: -16px;
 }
 .footer-circle {
-    bottom: -63px;
-    left: -7px;
+    bottom: -2px;
+    left: -23px;
 }
 .footer-nav-link-mail{
     font-size: 12px;
@@ -1451,6 +1446,7 @@ ul.footer-nav{
     text-align: center;
 color: #2B3541;
 opacity: 0.3;
+display:block;
 }
 
 }
