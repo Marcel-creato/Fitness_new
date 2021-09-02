@@ -23,7 +23,8 @@ header{
     line-height: 150%;
     margin:0;
     padding-top: 10px;
-    padding-right: 153px;
+    /*padding-right: 153px;*/
+    padding-right: 46px;
 }
 a:link{
     color:rgba(24, 31, 39, 1);
@@ -783,9 +784,9 @@ transform: translate(0px, 0px);
 .advantages-mobile,
 .training-sport-mobile,
 .nav-logo-mobile,
-.header-mobile{
+.header-mobile,
+.form-participate-menu{
     display: none;
-
 }
 
 
@@ -800,6 +801,7 @@ transform: translate(0px, 0px);
     .header-mobile{
         display: flex;
         justify-content: space-between;
+        
     }
     .nav-logo-mobile{
         padding-left: 15px;
@@ -822,10 +824,121 @@ transform: translate(0px, 0px);
     padding-left:9px;
     margin-left: -63px;
 }
+.menu-mobile{
+    background: transparent;
+    border: none;
+    align-items: center;
+    width: 40px;
+    padding-left:9px;
+    margin-left: -63px;
+}
+.menu-mobile:hover{
+    display:block;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 64px;
+    left: 0px;
+    width: 360px;
+    height: 505px;
+    /*position: center;
+    display: flex;
+    flex-direction: column;
+    background: #F3F3F3;*/
+   
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+   transition: all 0.8s ease 0s;
+    transform: translate(0px, -100px);
+}
 .nav-social{
     padding-top:0;
     margin-right: 4px;
     margin-left: -98px;
+}
+
+.form-participate-menu{
+    display:block;
+    width: 100%;
+    height: 100%;
+    top: -60px;
+    left: 0px;
+    height: 510px;
+   /*
+    width: 360px;
+    
+    position: center;
+    background: #F3F3F3;
+     display: flex;
+    flex-direction: column;*/
+    background: red;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.8s ease 0s;
+    transform: translate(0px, -80px);
+}
+
+
+.form-participate-menu:target{
+    opacity: 1;
+    visibility: visible;
+    transform: translate(0px, 0px);
+    display:block;
+    position: relative;
+    /*z-index:1;
+    
+    */
+    }
+.form-participate-body-menu{
+    display: flex;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:10px;
+    padding-top:30px;
+    padding-bottom:40px;
+}
+.form-participate-text-menu{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1px solid #2B3541;
+padding-bottom: 20px;
+}
+.form-participate-text-menu:nth-child(3){
+    border-bottom:transparent;
+}
+.form-participate-body-close-menu{
+text-decoration: none;
+}
+/*main{
+    display:none;
+    display:hidden;
+}*/
+.form-participate-description{
+    padding-left: 10px;
+    padding-right:10px;
+    margin:0;
+   
+}
+.form-participate-description input[type="submit"]{
+    margin-top:70px ;
+    width: 340px;
+    height: 65px;
+}
+
+.nav-social-menu-mobile{
+    text-align: right;
+    margin-top: 40px;
+}
+.social-menu-mobile{
+    transition: 1s ease;
+    padding-left: 30px;
+}
+
+.social-menu-mobile:hover{
+    transform: scale(1.2);
 }
 .photo{
     max-width: 100%;
@@ -852,7 +965,7 @@ transform: translate(0px, 0px);
     .section-photo {
         position: relative;
         left: -4px;
-        top: 415px;
+        top: 419px;
     }
     .arrow {
        display: none;
@@ -881,7 +994,7 @@ transform: translate(0px, 0px);
     .section-events {
         padding-bottom: 40px;
         margin-bottom: 11px;
-        margin-top: 488px;
+        margin-top: 467px;
         margin-right: 10px;
         margin-left: 10px;
     }
@@ -1060,7 +1173,7 @@ position:relative;
     opacity: 0;
     visibility: hidden;
     transition: all 0.8s ease 0s;
-    transform: translate(0px, -100px);
+    transform: translate(0px, -571px);
 }
 .form-participate-circle {
     position: absolute;
@@ -1110,18 +1223,7 @@ position:relative;
     display:flex;
     flex-direction: column;
 }
-/*
-.card-box:hover .card-text-active {
-    font-size: 12px;
-    transform: translateY(50px);
-    padding-left: 53px;
-    padding-bottom: 15px;
-    padding-top: 0px;
-    padding-bottom: 16px;
-    margin-left: 0;
-    margin-top: -32px;
-}
-*/
+
 .section-training{
     margin-left: 10px;
     margin-right: 10px;
